@@ -89,23 +89,29 @@ const HomePage = () => {
           <ProjectTile
             title="React app that suggests music based on the weather"
             header="Bear-O-Metric Radio"
+            github="https://github.com/jaycammarano/BearometricRadio"
             author="Jay Cammarano, Will Campbell, Maria Shkolnik"
             logo={bearometric}
-            logoAlt=""
+            logoAlt="https://www.freepik.com/vectors/icons Icons vector created by rawpixel.com - www.freepik.com"
+            link="https://bear-o-metric-radio.netlify.app/"
           />
           <ProjectTile
             title="Organize events in an encrypted setting"
             header="Encrypt Events"
+            github="https://github.com/jaycammarano/encryptjs-backend"
             author="Jay Cammarano"
             logo={encryption}
-            logoAlt="Icons made by https://www.flaticon.com/authors/vectors-market Vectors Market from https://www.flaticon.com/ www.flaticon.com"
+            link="https://encrypted-events-manager.netlify.app/"
+            logoAlt="https://www.freepik.com/vectors/technology Technology vector created by rawpixel.com - www.freepik.com"
           />
           <ProjectTile
             title="Combines music metadata with streaming using Discogs and SoundCloud"
             header="fig."
+            github="https://github.com/jaycammarano/fig_v02"
             author="Jay Cammarano"
             logo={fig}
-            logoAlt=""
+            logoAlt="https://www.freepik.com/vectors/background Background vector created by freepik - www.freepik.com"
+            link="https://fig-music.herokuapp.com/"
           />
         </div>
         <References />

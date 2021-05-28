@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-scroll';
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 interface ITile {
@@ -22,8 +21,8 @@ const ProjectTile: React.FC<ITile> = ({
   link,
 }) => {
   return (
-    <div className="md:w-1/3 mt-8 mx-2 border-2 border-green-400 rounded">
-      <div className="relative p-4 flex flex-row text-white border-b-4 border-green-400">
+    <div className="mx-2 mt-8 border-2 border-green-400 rounded md:w-1/3">
+      <div className="relative flex flex-row p-4 text-white border-b-4 border-green-400">
         <div className="m-auto sm:m-auto md:m-0 lg:m-auto">
           <a href={link}>
             <strong className="text-xl md:text-base md:text-right">
@@ -31,10 +30,10 @@ const ProjectTile: React.FC<ITile> = ({
             </strong>
           </a>
         </div>
-        <div className="flex flex-row absolute m-2 right-0 top-0">
+        <div className="absolute top-0 right-0 flex flex-row m-2">
           <a className="float-right" href={github}>
             <FontAwesomeIcon
-              className="text-white w-full Icon"
+              className="w-full text-white Icon"
               icon={faGithubSquare}
               size="3x"
             />

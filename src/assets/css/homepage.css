@@ -42,13 +42,20 @@ body {
   .leftPanel {
     display: none;
   }
-  .header {
-    display: relative;
+}
+
+@media screen and (min-width: 640px) {
+  .Icon {
+    font-size: 45px;
   }
 }
 
 @media only screen and (min-width: 800px) {
   .header {
     display: none;
+  }
+  .Icon {
+    display: relative;
+    font-size: 35px;
   }
 }

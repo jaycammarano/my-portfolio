@@ -6,7 +6,7 @@ interface ITile {
   title: string;
   github: string;
   header: string;
-  author: string | React.ReactNode;
+  author: string | JSX.Element;
   logo: string;
   logoAlt: string;
   link: string;
@@ -22,17 +22,19 @@ const ProjectTile: React.FC<ITile> = ({
   link,
 }) => {
   return (
-    <div className="md:w-1/3 sm:w-full mt-8 mx-2 text-center border-2 border-green-400 rounded">
-      <div className="relative p-4 flex flex-row text-center text-white border-b-4 border-green-400">
-        <div className="m-auto">
+    <div className="md:w-1/3 mt-8 mx-2 border-2 border-green-400 rounded">
+      <div className="relative p-4 flex flex-row text-white border-b-4 border-green-400">
+        <div className="sm:m-auto md:m-0 lg:m-auto">
           <a href={link}>
-            <strong className="text-xl">{header}</strong>
+            <strong className="text-xl md:text-base md:text-right">
+              {header}
+            </strong>
           </a>
         </div>
         <div className="flex flex-row absolute m-2 right-0 top-0">
           <a className="float-right" href={github}>
             <FontAwesomeIcon
-              className="text-white w-full"
+              className="text-white w-full Icon"
               icon={faGithubSquare}
               size="3x"
             />

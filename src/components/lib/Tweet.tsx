@@ -32,8 +32,8 @@ const Tweet: React.FC<ITweet> = ({
           label={`${username} - ${displayName}`}
         />
         <div>
-          <div className="flex flex-row m-2 text-lg tooltip">
-            <div className="font-bold">
+          <div className="flex flex-row m-2 text-lg ">
+            <div className="font-bold tooltip">
               {useName}
               <span className="font-light tooltiptext">{displayName}</span>
             </div>

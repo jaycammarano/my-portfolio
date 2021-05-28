@@ -24,7 +24,7 @@ const ProjectTile: React.FC<ITile> = ({
   return (
     <div className="md:w-1/3 mt-8 mx-2 border-2 border-green-400 rounded">
       <div className="relative p-4 flex flex-row text-white border-b-4 border-green-400">
-        <div className="sm:m-auto md:m-0 lg:m-auto">
+        <div className="m-auto sm:m-auto md:m-0 lg:m-auto">
           <a href={link}>
             <strong className="text-xl md:text-base md:text-right">
               {header}

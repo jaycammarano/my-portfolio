@@ -13,7 +13,7 @@ const HomePage = () => {
   return (
     <Layout>
       <div id="home" className="ml-32 m-8 font-bold text-white centerPanel">
-        <div className="text-5xl sm:text-6xl m-4 my-16 md:text-7xl">
+        <div className="text-5xl sm:text-6xl sm:mt-32 lg:mt-4 m-4 my-16 md:text-7xl">
           Jay Cammarano
         </div>
         <div className="lg:flex lg:flex-row lg:m-2 lg:mb-24 md:w-full md:m-auto md:mb-24 sm:flex sm:flex-col mb-24">

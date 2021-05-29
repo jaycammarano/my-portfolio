@@ -8,17 +8,25 @@ import fig from '../../assets/images/fig.jpg';
 import Bio from './Bio';
 import References from './References';
 import { Link } from 'react-scroll';
+import OpenToWork from './OpenToWork';
 
 const HomePage = () => {
   return (
     <Layout>
-      <div id="home" className="ml-32 m-8 font-bold text-white centerPanel">
-        <div className="text-5xl sm:text-6xl sm:mt-32 lg:mt-4 m-4 my-16 md:text-7xl">
-          Jay Cammarano
+      <div id="home" className="m-8 ml-32 font-bold text-white centerPanel">
+        <div className="flex flex-col my-16 ml-4 md:flex-row">
+          <div className="text-5xl sm:text-6xl sm:mt-32 lg:mt-4 md:text-7xl">
+            Jay Cammarano
+          </div>
+          <Link to="otw">
+            <button className="w-32 h-10 px-2 mt-2 text-base font-bold bg-green-500 border-2 border-green-500 rounded hover:border-green-300 hover:border-2 lg:mt-4 md:w-40 md:ml-4 md:mt-32 sm:text-base md:text-xl">
+              Open To Work
+            </button>
+          </Link>
         </div>
-        <div className="lg:flex lg:flex-row lg:m-2 lg:mb-24 md:w-full md:m-auto md:mb-24 sm:flex sm:flex-col mb-24">
+        <div className="mb-24 lg:flex lg:flex-row lg:m-2 lg:mb-24 md:w-full md:m-auto md:mb-24 sm:flex sm:flex-col">
           <Link to="experience">
-            <div className="relative flex flex-row pl-4 py-3 pr-32 m-2 text-3xl bg-green-500  border-4 border-green-500 rounded hover:border-green-300 hover:border-2 overflow-hidden">
+            <div className="relative flex flex-row py-3 pl-4 pr-32 m-2 overflow-hidden text-3xl bg-green-500 border-4 border-green-500 rounded hover:border-green-300 hover:border-2">
               <div>Experience</div>
               <div className="geometric1">
                 <svg
@@ -39,7 +47,7 @@ const HomePage = () => {
             </div>
           </Link>
           <Link to="projects">
-            <div className="relative flex flex-row pl-4 py-3 pr-32 m-2 text-3xl bg-green-500 border-4 border-green-500 rounded hover:border-green-300 hover:border-2 overflow-hidden">
+            <div className="relative flex flex-row py-3 pl-4 pr-32 m-2 overflow-hidden text-3xl bg-green-500 border-4 border-green-500 rounded hover:border-green-300 hover:border-2">
               <div>Projects</div>
               <div className="geometric1">
                 <svg
@@ -60,7 +68,7 @@ const HomePage = () => {
             </div>
           </Link>
           <Link to="references">
-            <div className="relative flex flex-row pl-4 py-3 pr-32 m-2 text-3xl bg-green-500 border-4 border-green-500 rounded hover:border-green-300 hover:border-2 overflow-hidden">
+            <div className="relative flex flex-row py-3 pl-4 pr-32 m-2 overflow-hidden text-3xl bg-green-500 border-4 border-green-500 rounded hover:border-green-300 hover:border-2">
               <div>References</div>
               <div className="geometric1">
                 <svg
@@ -83,7 +91,7 @@ const HomePage = () => {
         </div>
         <Bio />
         <div id="projects">
-          <h2 className="text-5xl text-center my-4">Projects:</h2>
+          <h2 className="my-4 text-5xl text-center">Projects:</h2>
         </div>
         <div className="md:flex md:flex-row sm:flex sm:flex-col sm:w-50">
           <ProjectTile
@@ -115,6 +123,7 @@ const HomePage = () => {
           />
         </div>
         <References />
+        <OpenToWork />
       </div>
     </Layout>
   );
